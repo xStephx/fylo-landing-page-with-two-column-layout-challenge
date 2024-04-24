@@ -13,8 +13,7 @@
   <!--Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Fylo landing page with two column layout</title>
 </head>
 
@@ -33,18 +32,41 @@
       </ul>
     </nav>
   </header>
+  <!-- Hero Section -->
+  <section class="hero container container-sm container-md container-lg container-xl container-xxl d-flex justify-content-center align-items-center my-5">
+    <div class="row align-items-center">
+      <div class="col-md-6 order-md-1 order-2 py-5">
+        <div class="hero-content">
+          <h1 class="header-hero-section text-md-start text-center py-3">All your files in one secure location, accessible anywhere.</h1>
+          <p class="paragraph-hero-section text-md-start text-center">
+            Fylo stores your most important files in one secure location.
+            Access them wherever you need, share and collaborate with friends,
+            family, and co-workers.
+          </p>
+          <form id="emailFormHero" class="d-flex flex-md-row flex-column">
+            <div class="email-container d-flex flex-column">
+              <input id="emailInputHero" type="text" placeholder="Enter your email..." class="email-holder my-md-2 my-3">
+              <div id="emailMessageHero" class="invalid-feedback"></div>
+            </div>
+            <button type="submit" class="btn btn-custom-hero text-white mx-md-3 my-md-2 my-3 py-2 px-5">Get Started</button>
+          </form>
+        </div>
+      </div>
+      <div class="col-md-6 order-md-2 order-1">
+        <div class="hero-image">
+          <img src="assets/images/illustration-1.svg" alt="Illustration Image" class="img-fluid">
+        </div>
+      </div>
+    </div>
+    
 
+  </section>
 
+  
 
+ 
 
-
-  All your files in one secure location, accessible anywhere.
-
-  Fylo stores your most important files in one secure location.
-  Access them wherever you need, share and collaborate with friends,
-  family, and co-workers.
-
-  Get Started
+ 
 
   Stay productive, wherever you are
 
@@ -82,9 +104,9 @@
   Privacy
 
   <!-- Bootstrap -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <!-- Custom JavaScript-->
+  <script src="assets/js/script.js"></script>
 </body>
 
 </html>

@@ -51,6 +51,44 @@ p{
     opacity: 0.9;
 }
 
+/* Hero Secton */
+.header-hero-section{
+    color: var(--Very-Dark-Blue);
+    font-weight: 700;
+}
+
+/* Paragraph */
+.paragraph-hero-section{
+    color: var(--Very-Dark-Blue);
+    font-weight: 400;
+}
+
+/* Email Holder */
+.email-holder{
+    border: 1px solid black;
+    padding: 10px 40px;
+    border-radius: 2px !important;
+}
+
+.email-holder::placeholder{
+    font-size: 0.9rem;
+    color: var(--Light-Gray);
+}
+
+.is-invalid-hero{
+    border: 1px solid red;
+}
+
+/* Button */
+.btn-custom-hero{
+    background-color: var(--Bright-Blue) !important;
+    font-size: 0.95rem !important;
+}
+
+.btn-custom-hero:hover{
+    opacity: 0.9;
+}
+
 /* Responsive */
 @media(max-width: 375px){
     .logo img{
