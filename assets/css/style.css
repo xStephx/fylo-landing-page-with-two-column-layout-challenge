@@ -30,67 +30,67 @@
     --Font-size-paragraph: 16px;
 }
 
-body{
+body {
     font-family: var(--Font-Open-Sans) !important;
     font-weight: 400;
 }
 
-p{
+p {
     font-size: var(--Font-size-paragraph);
 }
 
 /* Navbar */
-.navbar ul li a{
+.navbar ul li a {
     color: var(--Very-Dark-Blue);
     font-weight: 400;
     transition: all 0.3s;
 }
 
-.navbar ul li a:hover{
+.navbar ul li a:hover {
     font-size: 1.1rem;
     opacity: 0.9;
 }
 
 /* Hero Secton */
-.header-hero-section{
+.header-hero-section {
     color: var(--Very-Dark-Blue);
     font-weight: 700;
 }
 
 /* Paragraph */
-.paragraph-hero-section{
+.paragraph-hero-section {
     color: var(--Very-Dark-Blue);
     font-weight: 400;
 }
 
 /* Email Holder */
-.email-holder{
-    border: 1px solid black;
+.email-holder {
+    border: 1px solid gray;
     padding: 10px 40px;
     border-radius: 2px !important;
 }
 
-.email-holder::placeholder{
+.email-holder::placeholder {
     font-size: 0.9rem;
     color: var(--Light-Gray);
 }
 
-.is-invalid-hero{
+.is-invalid-hero {
     border: 1px solid red;
 }
 
 /* Button */
-.btn-custom-hero{
+.btn-custom-hero {
     background-color: var(--Bright-Blue) !important;
     font-size: 0.95rem !important;
 }
 
-.btn-custom-hero:hover{
+.btn-custom-hero:hover {
     opacity: 0.9;
 }
 
 /* Content Section */
-.content-bg-curve{
+.content-bg-curve {
     width: 100%;
     height: 115px;
     margin-top: 150px;
@@ -100,38 +100,38 @@ p{
     background-position: top;
 }
 
-.content-section{
+.content-section {
     background-color: var(--Light-Grayish-Blue);
 }
 
 /* Header */
-.header-content-section{
+.header-content-section {
     color: var(--Very-Dark-Blue);
     font-weight: 700;
 }
 
 /* Paragraph */
-.paragraph-content-section{
+.paragraph-content-section {
     color: var(--Very-Dark-Blue);
     font-weight: 400;
 }
 
 /* Content Link */
-.content-link a{
+.content-link a {
     display: block;
     max-width: 170px;
     color: var(--Moderate-Cyan);
     text-decoration: none;
-    border-bottom: 1px solid var(--Moderate-Cyan); 
+    border-bottom: 1px solid var(--Moderate-Cyan);
     line-height: 1.5;
 }
 
-.content-link a:hover{
+.content-link a:hover {
     opacity: 0.8;
 }
 
 /* Content Card */
-.content-card{
+.content-card {
     max-width: 450px;
     background-color: #fff;
     margin-top: 20px;
@@ -140,13 +140,13 @@ p{
 }
 
 /* Content Card Paragraph */
-.content-card-paragraph{
+.content-card-paragraph {
     color: var(--Very-Dark-Blue);
     font-weight: 400;
 }
 
 /* Testimonial Image */
-.testimonial-img{
+.testimonial-img {
     max-width: 30px;
     max-height: 30px;
     margin-bottom: 20px;
@@ -154,11 +154,11 @@ p{
 }
 
 /* Testimonial User Details */
-.testimonial-user-details{
+.testimonial-user-details {
     display: inline-block;
 }
 
-.testimonial-name{
+.testimonial-name {
     display: block;
     font-size: 0.85rem;
     font-weight: 700;
@@ -167,32 +167,81 @@ p{
     color: var(--Very-Dark-Blue);
 }
 
-.testimonial-role{
+.testimonial-role {
     font-size: 0.65rem;
     font-weight: 400;
     color: var(--Very-Dark-Blue);
 }
 
+/* Subscription Section */
+.subscription-section {
+    padding: 120px;
+    background-color: var(--Desaturated-Blue);
+}
+
+.header-subscription-section {
+    color: var(--Light-Grayish-Blue);
+    font-weight: 700;
+}
+
+.paragraph-subscription-section {
+    color: var(--Light-Grayish-Blue);
+    font-weight: 400;
+}
+
+.btn-custom-subscription {
+    font-size: 0.9rem !important;
+    font-weight: 700 !important;
+    padding: 15px 25px !important;
+    background-color: var(--Bright-Blue) !important;
+}
+
+.is-invalid-subscription {
+    border: 1px solid var(--Light-Gray);
+}
+
 /* Responsive */
-@media(max-width: 768px){
-    .logo img{
+@media(max-width: 768px) {
+    .logo img {
         max-width: 100px;
     }
 
-    .content-bg-curve{
+    .content-bg-curve {
         margin-top: 50px;
     }
-    .header-content-section{
+
+    .header-content-section {
         font-size: 1.5rem;
         text-align: center;
     }
+    .paragraph-content-section{
+        font-size: 0.9rem;
+    }
 
-    .content-link a{
+    .content-link a {
         margin: 20px auto !important;
         text-align: center;
     }
 
-    .content-card{
+    .content-card {
         margin: 20px auto;
+    }
+
+    .subscription-section {
+        padding: 80px;
+    }
+
+    .header-subscription-section {
+        text-align: center;
+    }
+
+    .paragraph-subscription-section {
+        text-align: center;
+        font-size: 0.9rem;
+    }
+
+    .d-flex-column-mobile {
+        display: flex;
+        flex-direction: column;
     }
 }
