@@ -1,0 +1,40 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Variables */
+:root {
+    /* Colors */
+
+    /* Primary Colors */
+    --Very-Dark-Blue: hsl(243, 87%, 12%);
+    --Desaturated-Blue: hsl(238, 22%, 44%);
+
+    /* Accent Colors */
+    --Bright-Blue: hsl(224, 93%, 58%);
+    --Moderate-Cyan: hsl(170, 45%, 43%);
+
+    /* Neutral Colors */
+    --Light-Grayish-Blue: hsl(240, 75%, 98%);
+    --Light-Gray: hsl(0, 0%, 75%);
+
+    /* Fonts */
+
+    /* Headings, Call-to-actions, Header Navigation, Weights: 400, 700 */
+    --Font-Raleway: "Raleway", sans-serif;
+    /* Body, Weights: 400 */
+    --Font-Open-Sans: "Open Sans", sans-serif;
+    --Font-size-paragraph: 16px;
+}
+
+body{
+    font-family: var(--Font-Open-Sans) !important;
+    font-weight: 400;
+}
+
+p{
+    font-size: var(--Font-size-paragraph);
+}
