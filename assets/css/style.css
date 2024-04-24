@@ -38,3 +38,22 @@ body{
 p{
     font-size: var(--Font-size-paragraph);
 }
+
+/* Navbar */
+.navbar ul li a{
+    color: var(--Very-Dark-Blue);
+    font-weight: 400;
+    transition: all 0.3s;
+}
+
+.navbar ul li a:hover{
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* Responsive */
+@media(max-width: 375px){
+    .logo img{
+        max-width: 100px;
+    }
+}
