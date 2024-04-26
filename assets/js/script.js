@@ -8,10 +8,11 @@ emailFormHero.addEventListener('submit', function (event) {
     const email = emailInputHero.value.trim();
 
     if (!email) {
-        emailInputHero.classList.add('is-invalid');
+        emailInputHero.classList.add('is-invalid', 'email-input-invalid');
         emailMessageHero.innerText = 'Please enter your email!';
         emailMessageHero.style.display = 'block';
-        emailMessageHero.style.marginTop = '-10px';
+        emailMessageHero.style.marginTop = '-5px';
+        emailMessageHero.style.marginBottom = '5px';
         emailMessageHero.style.fontSize = '0.8rem';
         emailMessageHero.style.color = 'red';
         return;
@@ -19,10 +20,11 @@ emailFormHero.addEventListener('submit', function (event) {
 
     const isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
     if (!isValidEmail) {
-        emailInputHero.classList.add('is-invalid-hero');
+        emailInputHero.classList.add('is-invalid', 'email-input-invalid');
         emailMessageHero.innerText = 'Please check your email!';
         emailMessageHero.style.display = 'block';
-        emailMessageHero.style.marginTop = '-10px';
+        emailMessageHero.style.marginTop = '-5px';
+        emailMessageHero.style.marginBottom = '5px';
         emailMessageHero.style.fontSize = '0.8rem';
         emailMessageHero.style.color = 'red';
         return;
@@ -32,7 +34,12 @@ emailFormHero.addEventListener('submit', function (event) {
 });
 
 emailInputHero.addEventListener('input', function () {
-    emailInputHero.classList.remove('is-invalid-hero');
+    const email = emailInputHero.value.trim();
+    const isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+
+    if (isValidEmail) {
+        emailInputHero.classList.remove('is-invalid', 'email-input-invalid');
+    }
     emailMessageHero.innerText = '';
     emailMessageHero.style.display = 'none';
 });
@@ -47,10 +54,11 @@ emailFormSubscription.addEventListener('submit', function (event) {
     const email = emailInputSubscription.value.trim();
 
     if (!email) {
-        emailInputSubscription.classList.add('is-invalid');
+        emailInputSubscription.classList.add('is-invalid', 'email-input-invalid');
         emailMessageSubscription.innerText = 'Please enter your email!';
         emailMessageSubscription.style.display = 'block';
-        emailMessageSubscription.style.marginTop = '-10px';
+        emailMessageSubscription.style.marginTop = '-5px';
+        emailMessageSubscription.style.marginBottom = '5px';
         emailMessageSubscription.style.fontSize = '0.8rem';
         emailMessageSubscription.style.color = 'white';
         return;
@@ -58,10 +66,11 @@ emailFormSubscription.addEventListener('submit', function (event) {
 
     const isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
     if (!isValidEmail) {
-        emailInputSubscription.classList.add('is-invalid-subscription');
+        emailInputSubscription.classList.add('is-invalid', 'email-input-invalid');
         emailMessageSubscription.innerText = 'Please check your email!';
         emailMessageSubscription.style.display = 'block';
-        emailMessageSubscription.style.marginTop = '-10px';
+        emailMessageSubscription.style.marginTop = '-5px';
+        emailMessageSubscription.style.marginBottom = '5px';
         emailMessageSubscription.style.fontSize = '0.8rem';
         emailMessageSubscription.style.color = 'white';
         return;
@@ -71,7 +80,12 @@ emailFormSubscription.addEventListener('submit', function (event) {
 });
 
 emailInputSubscription.addEventListener('input', function () {
-    emailInputSubscription.classList.remove('is-invalid-subscription');
+    const email = emailInputSubscription.value.trim();
+    const isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    
+    if (isValidEmail) {
+        emailInputSubscription.classList.remove('is-invalid', 'email-input-invalid');
+    }
     emailMessageSubscription.innerText = '';
     emailMessageSubscription.style.display = 'none';
 });
